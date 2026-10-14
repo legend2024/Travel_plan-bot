@@ -1,0 +1,65 @@
+# ===== 敏感配置（务必忽略，切勿提交，含 AMAP_API_KEY 等）=====
+.env
+.env.*
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ===== 虚拟环境 =====
+.venv/
+venv/
+ENV/
+env/
+
+# ===== 测试 / 类型检查 / 缓存 =====
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.cache/
+
+# ===== 项目运行时产物 =====
+# 会话历史 CSV（utils/helper.py 生成于 history/）
+history/
+*.csv
+# 本地数据库 / 检查点
+*.db
+*.sqlite
+*.sqlite3
+# 高德静态地图生成图（经纬度命名，如 113_128893_29_369261.png）
+[0-9]*_[0-9]*.png
+
+# ===== 日志 =====
+*.log
+logs/
+
+# ===== 编辑器 / IDE =====
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ===== 操作系统 =====
+.DS_Store
+Thumbs.db
