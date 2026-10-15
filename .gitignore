@@ -1,6 +1,8 @@
 # ===== 敏感配置（务必忽略，切勿提交，含 AMAP_API_KEY 等）=====
 .env
 .env.*
+# 但环境变量模板文件需要提交，用于他人对照创建 .env
+!.env.example
 
 # ===== Python =====
 __pycache__/

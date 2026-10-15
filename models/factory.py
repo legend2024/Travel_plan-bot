@@ -6,7 +6,7 @@ class LLMFactory:
         if model is None or temperature is None:
             raise ValueError("Both 'model' and 'temperature' must be specified.")
 
-        if model.startswith('gpt'):
+        if model.startswith('qwen'):
             return ChatOpenAI(model=model, temperature = temperature, streaming=True)
 
         # elif model.startswith('text-davinci'):

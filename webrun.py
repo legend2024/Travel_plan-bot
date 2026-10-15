@@ -10,7 +10,7 @@ warnings.filterwarnings("ignore", category=LangChainBetaWarning)
 
 _ = load_dotenv(find_dotenv())
 
-app = init_app(model_name="gpt-4o-mini")
+app = init_app(model_name="qwen3.8-max")
 thread_id = get_thread_id()
 print('thread_id:',thread_id)
 config = {"configurable": {"thread_id": thread_id}}
